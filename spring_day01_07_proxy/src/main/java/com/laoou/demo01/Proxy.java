@@ -23,12 +23,14 @@ public class Proxy implements Rent {
     public void seeHouse() {
         System.out.println("中介带你看房");
     }
-//    收中介费
+
+    //    收中介费
     public void fare() {
         System.out.println("中介收费");
     }
-//    签合同
+
+    //    签合同
     public void hetong() {
-    System.out.println("签合同");
-}
+        System.out.println("签合同");
+    }
 }

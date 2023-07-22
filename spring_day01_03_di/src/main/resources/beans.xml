@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="address" class="com.laoou.pojo.Address">
         <property name="address" value="深圳"></property>
     </bean>
     <bean id="student" class="com.laoou.pojo.Student">
-<!--      1、  普通值注入 value-->
+        <!--      1、  普通值注入 value-->
         <property name="name" value="老罗"/>
-<!--        2、bean注入 ref-->
+        <!--        2、bean注入 ref-->
         <property name="address" ref="address"/>
-<!--        3、数组注入 ref-->
+        <!--        3、数组注入 ref-->
         <property name="books">
             <array>
                 <value>红楼梦</value>
@@ -19,7 +19,7 @@
                 <value>三国演义</value>
             </array>
         </property>
-<!--        4.list-->
+        <!--        4.list-->
         <property name="hobbys">
             <list>
                 <value>听歌</value>
@@ -27,7 +27,7 @@
                 <value>听歌2</value>
             </list>
         </property>
-<!--        5.map-->
+        <!--        5.map-->
         <property name="card">
             <map>
                 <entry key="身份证" value="123456"/>
@@ -35,7 +35,7 @@
                 <entry key="银行卡" value="12345622222"/>
             </map>
         </property>
-<!--        6.set-->
+        <!--        6.set-->
         <property name="games">
             <set>
                 <value>LOL</value>
@@ -43,11 +43,11 @@
                 <value>BOB</value>
             </set>
         </property>
-<!--        7.NULL-->
+        <!--        7.NULL-->
         <property name="wife">
             <null></null>
         </property>
-<!--        properties-->
+        <!--        properties-->
         <property name="info">
             <props>
                 <prop key="driver">2013121</prop>
@@ -57,5 +57,5 @@
             </props>
         </property>
     </bean>
-    
+
 </beans>

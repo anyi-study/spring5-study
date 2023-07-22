@@ -1,6 +1,6 @@
 package com.laoou.demo02;
 
-public class UserServiceProxy implements UserService{
+public class UserServiceProxy implements UserService {
     private UserServiceImpl userService;
 
     public void setUserService(UserServiceImpl userService) {
@@ -30,7 +30,8 @@ public class UserServiceProxy implements UserService{
         log("query 方法");
         userService.query();
     }
-    public void log(String msg){
-        System.out.println("添加日志:"+msg);
+
+    public void log(String msg) {
+        System.out.println("添加日志:" + msg);
     }
 }

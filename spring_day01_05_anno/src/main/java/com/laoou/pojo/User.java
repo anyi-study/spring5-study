@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 // @Component组件 等价于xml配置的bean
 @Component
 public class User {
-//    @Value("laoou")
+    //    @Value("laoou")
     public String name;
 
     @Value("laoou")

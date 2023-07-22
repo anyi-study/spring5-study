@@ -5,6 +5,7 @@
 
 <mapper namespace="com.laoou.mapper.UserMapper">
     <select id="selectUser" resultType="user">
-        select * from blog.users
+        select *
+        from blog.users
     </select>
 </mapper>

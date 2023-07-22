@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class UserConfig {
 
     @Bean
-    public User getUser(){
+    public User getUser() {
         return new User();
     }
 }
